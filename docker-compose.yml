@@ -1,7 +1,7 @@
 version: '3'
 services:
   magic:
-    image: mageai/mageai:latest
+    image: mageai/mageai:alpha
     command: mage start ${PROJECT_NAME}
     env_file:
       - .env
@@ -20,7 +20,7 @@ services:
       - 6789:6789
     volumes:
       - .:/home/src/
-      - ~/Documents/secrets/personal-gcp.json:/home/src/personal-gcp.json
+      - /home/koens/mage-zoomcamp/my-creds.json:/home/src/my-creds.json
     restart: on-failure:5
   postgres:
     image: postgres:14

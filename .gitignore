@@ -172,3 +172,5 @@ scratch*
 magic-zoomcamp
 *.json
 
+# credentials
+**my-creds.json
