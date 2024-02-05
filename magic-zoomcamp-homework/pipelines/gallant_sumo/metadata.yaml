@@ -20,6 +20,7 @@ blocks:
   configuration: {}
   downstream_blocks:
   - dwarven_glacier
+  - icy_melody
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -35,8 +36,7 @@ blocks:
 - all_upstream_blocks_executed: false
   color: null
   configuration: {}
-  downstream_blocks:
-  - icy_melody
+  downstream_blocks: []
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -59,11 +59,11 @@ blocks:
   language: python
   name: icy melody
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: data_exporter
   upstream_blocks:
-  - dwarven_glacier
+  - eclipsing_water
   uuid: icy_melody
 cache_block_output_in_memory: false
 callbacks: []
@@ -86,7 +86,7 @@ settings:
 spark_config: {}
 tags: []
 type: python
-updated_at: '2024-02-05T16:49:23+00:00'
+updated_at: '2024-02-05 17:12:10'
 uuid: gallant_sumo
 variables_dir: /home/src/mage_data/magic-zoomcamp-homework
 widgets: []
